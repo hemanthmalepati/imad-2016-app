@@ -1,4 +1,4 @@
 console.log('Loaded!');
-var element = document.getElementById('main-text'
-);
+var element = document.getByElementId('main-text'
+    );
 element.innerHtml = 'New value';
