@@ -22,14 +22,15 @@ var articles = {
             This is the cotent for my first article.This is the cotent for my first article.This is the cotent for my first article.This is the cotent for my first article.This is the cotent for my first article.This is the cotent for my first article.This is the cotent for my first article.
         </p>`
 },
-    'artilce-two' : { 
+      'article-two' : {
         title: 'Article two | Hemanth Malepati', 
         heading: 'Article two',
         date: 'sep 10, 2016',
         content: ` 
             <p>
                 This is the cotent for my second article.
-            </p>`},
+            </p>`
+},
     'article-three' : {
         title: 'Article three | Hemanth Malepati', 
         heading: 'Article three',
