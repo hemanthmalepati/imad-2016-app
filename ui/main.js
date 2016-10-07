@@ -24,4 +24,4 @@ function moveLeft () {
 } 
 If(marginleft > 50){
    moveLeft();
-};
+}
