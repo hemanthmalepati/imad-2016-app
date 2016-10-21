@@ -37,8 +37,7 @@ submit.onclick = function() {
           //Take some action
           if( request.status === 200) {
                 // capture a list of names andrender it as a list
-                var names = request.responseText;
-                names = JSON.parse(names);
+                
                 var list = '';
                 for (var i=0; i<names.length; i++) {
                     list += '<li>' + names[i] + '</li>';
@@ -50,17 +49,11 @@ submit.onclick = function() {
       }
       // Not done yet
   };
+  
  //Make the request  
+ var names = request.responseText;
+ names = JSON.parse(names);
  request.open('GET', 'http://hemanthmalepati.imad.hasura-app.io/submit-name?name=' + name, true);
  request.send(null); 
-    //Make a request to the server and send the name
-    
-    // capture a list of names andrender it as a list
-    var names = ['name1', 'name2', 'name3', 'name4'];
-    var list = '';
-    for (var i=0; i<names.length; i++) {
-        list += '<li>' + names[i] + '</li>';
-    }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+   
 };
