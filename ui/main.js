@@ -52,8 +52,8 @@ submit.onclick = function() {
   
  //Make the request  
  var names = request.responseText;
- names = JSON.parse(names);
- request.open('GET', 'http://hemanthmalepati.imad.hasura-app.io/submit-name?name=' + name, true);
- request.send(null); 
+ names = JSON.parse(names); 
+ httprequest.open('GET', 'http://hemanthmalepati.imad.hasura-app.io/submit-name?name=' + name, true);
+ httprequest.send(null); 
    
 };
